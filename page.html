@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d9d9d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .left .logo {
+            margin-bottom: 20px;
+        }
+
+        .left h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .left p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .left .google-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .left .google-login img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .left .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            margin: 20px 0;
+        }
+
+        .left .divider::before,
+        .left .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #ccc;
+            margin: 0 10px;
+        }
+
+        .left form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left form input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .left form a {
+            text-align: right;
+            font-size: 0.9rem;
+            color: #007bff;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        .left form button {
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .left .signup {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .left .signup a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .right {
+            flex: 1;
+            background: url('space-image.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .right::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .right .pic {
+            margin: auto;
+        }
+
+        .right .text {
+            position: absolute;
+            bottom: 20px;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5rem;
+        }
+
+        .right .text q {
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="https://thumbs.dreamstime.com/b/letter-t-logo-icon-design-template-elements-geometric-abstract-logos-letter-t-logo-327538181.jpg" alt="Logo" style="width: 50px;">
+            </div>
+            <h1>Hi There!</h1>
+            <p>Welcome, Community Dashboard</p>
+            <div class="google-login">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS78fWMyZTFLKJ9OlVW-1sKiiZWP2A8BHfUnw&s" alt="Google">
+                Log in with Google
+            </div>
+            <div class="divider">or</div>
+            <form>
+                <input type="email" placeholder="Your Email">
+                <input type="password" placeholder="Your Password">
+                <a href="#">Forgot password?</a>
+                <button type="submit">Log in</button>
+            </form>
+            <div class="signup">
+                Don’t have an account? <a href="#">Sign up</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="pic">
+                <img src="https://i.pinimg.com/736x/c5/d1/26/c5d1267e761295d43b5144fdfaeedbc5.jpg" alt="pic" style="width: 400px;">
+            </div>
+            <div class="text">
+                <q>Go wherever you want, space is full of wonders!</q>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
